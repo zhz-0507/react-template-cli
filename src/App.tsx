@@ -1,9 +1,13 @@
 import React from "react"
-function App() {
+import { useRoutes } from 'react-router-dom';
+import routes from '@/router';
 
+function App() {
+  const page = useRoutes(routes)
+  console.log('route', page)
   return (
     <div className="App">
-      react
+      { page }
     </div>
   )
 }
