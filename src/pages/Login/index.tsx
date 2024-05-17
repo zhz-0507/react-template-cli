@@ -1,9 +1,11 @@
 import React from "react"
+import './index.less'
 
+import { Button } from "antd"
 function Login() {
   return (
-    <div>
-      登录模块
+    <div className="login">
+      <Button>登录</Button>
     </div>
   )
 }

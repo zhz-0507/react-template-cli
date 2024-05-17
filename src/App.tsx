@@ -4,7 +4,6 @@ import routes from '@/router';
 
 function App() {
   const page = useRoutes(routes)
-  console.log('route', page)
   return (
     <div className="App">
       { page }
