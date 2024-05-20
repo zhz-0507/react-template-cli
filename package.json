@@ -85,6 +85,7 @@
     "webpackbar": "^6.0.1"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.5",
     "antd": "^5.17.2",
     "axios": "^1.6.0",
     "axios-retry": "^3.8.1",
