@@ -1,17 +1,16 @@
 import React from "react"
 import './index.less'
 import { Button } from "antd"
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from '../../store/features/counter/counterSlice';
-// import { postlogin } from '@/api/login'
+import { useAppSelector, useAppDispatch} from '../../store/hooks'
+import { increment, decrement} from '../../store/features/counter/counterSlice'
 
 const Counter = () => {
-  const count = useSelector((state: any) => {
+  const count = useAppSelector((state: any) => {
 
     console.log('state', state)
     return state.counter.value
   });
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   return (
     <div>
         <h1>计数器</h1>
