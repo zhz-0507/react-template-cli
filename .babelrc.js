@@ -35,6 +35,8 @@ module.exports = {
                 regenerator: true,
                 useESModules: false
             }
-        ]
+        ],
+        // 在这里添加 react-refresh 插件
+        // ['react-refresh/babel']
     ]
 };

@@ -38,7 +38,8 @@
   },
   "include": [
       "src",
-      "*.ts"
+      "*.ts",
+      "src/global.d.ts" // 添加这一行
   ],
   "exclude": ["node_modules", "build"]
 }
